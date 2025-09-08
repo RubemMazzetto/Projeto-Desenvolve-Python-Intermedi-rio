@@ -1,0 +1,26 @@
+wc['time_1'] = wc['time_1'].astype('string')
+wc['time_2'] = wc['time_2'].astype('string')
+wc['país_sede'] = wc['país_sede'].astype('string')
+wc['resultado'] = wc['resultado'].astype('string')
+wc['gols_1_detalhes'] = wc['gols_1_detalhes'].astype('string')
+wc['gols_2_detalhes'] = wc['gols_2_detalhes'].astype('string')
+wc['gols_1_contra'] = wc['gols_1_contra'].astype('string')
+wc['gols_2_contra'] = wc['gols_2_contra'].astype('string')
+wc['gols_1_penalti'] = wc['gols_1_penalti'].astype('string')
+wc['gols_2_penalti'] = wc['gols_2_penalti'].astype('string')
+wc['cartao_vermelho_1'] = wc['cartao_vermelho_1'].astype('string')
+wc['cartao_vermelho_2'] = wc['cartao_vermelho_2'].astype('string')
+wc['cartao_amarelo_1'] = wc['cartao_amarelo_1'].astype('string')
+wc['cartao_amarelo_2'] = wc['cartao_amarelo_2'].astype('string')
+wc['copa'] = wc['copa'].astype('string')
+
+wc['gols_1'] = wc['gols_1'].astype('int64')
+wc['gols_2'] = wc['gols_2'].astype('int64')
+wc['ano'] = wc['ano'].astype('int64')
+wc['comparecimento'] = wc['comparecimento'].astype('int64')
+
+wc['data'] = pd.to_datetime(wc['data'])
+
+wc['rodada'] = wc['rodada'].astype('category')
+
+wc.to_csv('wc_formatado.csv')

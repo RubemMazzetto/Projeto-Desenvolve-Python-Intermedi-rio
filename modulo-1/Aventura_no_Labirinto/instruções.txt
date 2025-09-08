@@ -1,0 +1,3 @@
+Use setas para mover.
+Colete pontos: +10 movimento válido, -5 parede.
+Alcance 'E' para vencer.
